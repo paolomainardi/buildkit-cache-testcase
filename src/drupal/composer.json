@@ -1,0 +1,26 @@
+{
+  "name": "drupal/test-caches",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "vcs",
+      "url": "https://git.drupal.org/project/phingdrushtask.git"
+    }
+  ],
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "bin-dir": "bin/",
+    "preferred-install": "source",
+    "autoloader-suffix": "Drupal8"
+  }
+}

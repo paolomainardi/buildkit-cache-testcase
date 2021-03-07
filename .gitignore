@@ -1,0 +1,79 @@
+**/backup/*.sql
+**/backup/*.tar.bz2
+**/.DS_Store
+**/.idea
+**/.php_cs.cache
+**/cache
+**/vendor/
+**/node_modules
+**/bin/*
+!**/bin/cs
+!**/bin/cs-fixer
+!**/bin/e
+!**/bin/enable-xdebug
+!**/bin/npm
+!**/bin/phpqa
+**/build.*.properties
+**/.aliases
+**/*.txt
+**/*.bz2
+**/*.gz
+**/*.zip
+**/tmp*
+**/exit_code
+**/dumps/*.sql
+
+# Drupal specific.
+**/drush/contrib
+**/vendor
+**/web/.*
+**/web/autoload.php
+**/web/core
+**/web/example.gitignore
+**/web/index.php
+**/web/modules/contrib
+**/web/profiles/contrib
+**/web/robots.txt
+**/web/sites/*/settings*.php
+**/web/sites/*/files
+**/web/sites/*/private
+**/web/sites/default/default.settings.php
+!**/web/sites/default/settings.php
+**/web/sites/example.settings.local.php
+**/web/sites/example.sites.php
+**/web/sites/simpletest
+**/web/sites/sites.php
+!**/web/themes/
+**/web/themes/*
+!**/web/themes/custom
+**/web/update.php
+**/web/web.config
+
+# Dir mounted as bucket-based storage
+**/storage/files/*
+
+# Tests.
+**/features/screenshots/
+**/.phpunit.result.cache
+
+# Coding Standards.
+**/reports
+
+# CSS and JS map files.
+**/dist/css/maps/*
+**/dist/js/*.map.js
+
+# CSS and JS compiled and map files.
+**/web/themes/custom/*/dist/
+**/web/themes/custom/firestarter_frontend/stylelint.log
+
+# Committed DB.
+!**/dumps/dump.sql.gz
+
+# Site previewer, this folder should always be available
+**/web/preview
+
+# Docker.
+**/.editorconfig
+**/.gitattributes
+docker-compose.override.yml

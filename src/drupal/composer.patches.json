@@ -1,0 +1,11 @@
+{
+  "patches": {
+    "drupal/core": {
+      "Taxonomy theme suggestions": "https://www.drupal.org/files/issues/core-theme-suggestion-for-taxonomy-view-modes-2767243-14.patch",
+      "Nested contextual links are always hidden at first page load": "https://www.drupal.org/files/issues/2020-12-02/nested_contextual_links_3054954-4.patch"
+    },
+    "drupal/form_mode_routing": {
+      "Automated Drupal Rector fixes": "https://www.drupal.org/files/issues/2020-05-23/form_mode_routing.1.3.rector.patch"
+    }
+  }
+}

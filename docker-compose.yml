@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  test:
+    build:
+      dockerfile: ./build/images/nginx/Dockerfile
+      context: .
+      args:
+        BUILDKIT_INLINE_CACHE: 1
+      cache_from:
+        - paolomainardi/buildkit-cache-testcase
+    image: paolomainardi/buildkit-cache-testcase
