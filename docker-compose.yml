@@ -7,5 +7,5 @@ services:
       args:
         BUILDKIT_INLINE_CACHE: 1
       cache_from:
-        - paolomainardi/buildkit-cache-testcase
-    image: paolomainardi/buildkit-cache-testcase
+        - paolomainardi/buildkit-cache-testcase:master
+    image: paolomainardi/buildkit-cache-testcase:master
