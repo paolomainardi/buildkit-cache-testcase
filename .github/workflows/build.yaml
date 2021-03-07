@@ -24,6 +24,7 @@ jobs:
           BUILDKIT_INLINE_CACHE: 1
           BUILDKIT_PROGRESS: plain
         run: |
+          docker system prune --all -f
           docker-compose version
           docker-compose build test
           docker push paolomainardi/buildkit-cache-testcase:master
